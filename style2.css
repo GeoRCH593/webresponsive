@@ -44,3 +44,8 @@ a:hover {
 .card:hover {
     box-shadow: rgba(0, 0, 0, 0.30) 0px 10px 25px 0px;
 }
+
+#formUpdate {
+    padding: 50px 0 ;
+    justify-content: center;
+}
