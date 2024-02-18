@@ -14,7 +14,7 @@ body {
     background-color: var(--color-dark2);
 }
 
-.formulario {
+.formulario, .formulario1 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -24,13 +24,28 @@ body {
     border-radius: 10px;
 }
 
-.formulario h1 {
+.formulario1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,  -50%);
+    width: 600px;
+    background-color: var(--color-light);
+    border-radius: 10px;
+}
+
+
+
+
+.formulario h1, .formulario1 h1 {
     text-align: center;
-    padding: 10px 0 20px 0;
+    padding: 20px 0 20px 0;
     border-bottom: 1px solid silver;
 }
 
-.formulario form{
+
+
+.formulario, .formulario1 form{
     padding: 0 40px;
 }
 
