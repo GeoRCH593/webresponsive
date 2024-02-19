@@ -14,15 +14,17 @@ const validarEmail= (email)=> {
     }
         alert(`Llenar el correo electrónico`)
 }
+
 document.getElementById("button").addEventListener("click", validarEmail)
 
-
 form.addEventListener("submit", (e) => {
-    e.preventDefault();  
+    e.preventDefault(); 
     const userData = userEmail.value;
     console.log(userData)
-    localStorage.setItem('datos del usuario', userData)
+    localStorage.setItem('Usuario ', userData)
     window.location.href = "index.html";
     const nombreLocalStorage = localStorage.getItem('datos del usuario');
     console.log(nombreLocalStorage);
 })
+
+
