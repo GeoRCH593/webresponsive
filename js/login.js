@@ -1,10 +1,8 @@
 const username = document.getElementById('userEmail');
 const pass = document.getElementById('userPassword');
-const button = document.getElementById('button');
 const form = document.getElementById('formuser')
 
-
-const validarEmail= (email)=> {
+const validarEmail= ()=> {
     const expReg = new RegExp(/^[\w.-]+@[a-z0-9.-]+\.[a-z]{2,3}$/);
     const username = document.getElementById('userEmail');
     if(username.value && !expReg.test(username.value)) {
@@ -15,16 +13,14 @@ const validarEmail= (email)=> {
         alert(`Bienvenido`)
 }
 
-document.getElementById("button").addEventListener("click", validarEmail);
+const login = document.getElementById('login');
+login.addEventListener("click", validarEmail);
 
 form.addEventListener("submit", (e) => {
     e.preventDefault(); 
     const userData = userEmail.value;
     console.log(userData)
-    localStorage.setItem('Usuario ', userData)
+    localStorage.setItem('usuario', userData)
     window.location.href = "index.html";
-    const nombreLocalStorage = localStorage.getItem('datos del usuario');
-    console.log(nombreLocalStorage);
-})
-
-
+    
+});
