@@ -22,22 +22,7 @@ form.addEventListener("submit", (e) => {
     const userData = userEmail.value;
     console.log(userData)
     localStorage.setItem('datos del usuario', userData)
-    window.location.href = "pagina2.html";
+    window.location.href = "index.html";
     const nombreLocalStorage = localStorage.getItem('datos del usuario');
     console.log(nombreLocalStorage);
 })
-
-
-
-
-
-/* if(username.validEmail = ){
-    console.log(correcto);
-}if(!expReg.test(userEmail.value)) {
-    alert("No es correcto el email");
-}
- */
-
-
-
-
