@@ -1,4 +1,4 @@
-const validarEmail2= ()=> {
+const validarEmail2 = ()=> {
     const expReg = new RegExp(/^[\w.-]+@[a-z0-9.-]+\.[a-z]{2,3}$/);
     const username2 = document.getElementById('newUserEmail');
     if(username2.value && !expReg.test(username2.value)) {
