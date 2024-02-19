@@ -12,10 +12,10 @@ const validarEmail= (email)=> {
         username.value = "";
         return;
     }
-        alert(`Llenar el correo electrónico`)
+        alert(`Bienvenido`)
 }
 
-document.getElementById("button").addEventListener("click", validarEmail)
+document.getElementById("button").addEventListener("click", validarEmail);
 
 form.addEventListener("submit", (e) => {
     e.preventDefault(); 

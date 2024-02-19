@@ -12,14 +12,14 @@ const validarEmail2= (email)=> {
         username2.value = "";
         return;
     }
-        alert(`Llenar el correo electrónico`)
+        alert(`Bienvenido`)
 }
 
 document.getElementById("button2").addEventListener("click", validarEmail2);
 
-
 form2.addEventListener("submit", (e) => {
     e.preventDefault();
+
     const userData2 = newUserEmail.value;
     console.log(userData2)
     localStorage.setItem('Nuevo usuario ', userData2)
@@ -27,3 +27,11 @@ form2.addEventListener("submit", (e) => {
     const nombreLocalStorage = localStorage.getItem('Nuevo usuario');
     console.log(nombreLocalStorage);
 })
+
+const removerId = document.querySelector('#removerId');
+
+removerId.addEventListener('click', () => {
+    window.localStorage.removeItem('Nuevo usuario', userData2);
+    window.location.href = "login.html";
+})
+
