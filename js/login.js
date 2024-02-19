@@ -16,7 +16,6 @@ const validarEmail= ()=> {
 const login = document.getElementById('login');
 login.addEventListener("click", validarEmail);
 
-
 form.addEventListener("submit", (e) => {
     e.preventDefault(); 
     const userData = userEmail.value;
