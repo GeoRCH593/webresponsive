@@ -12,6 +12,7 @@ const validarEmail= ()=> {
     }
         alert(`Bienvenido`)
 }
+
 const login = document.getElementById('login');
 login.addEventListener("click", validarEmail);
 

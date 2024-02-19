@@ -21,7 +21,7 @@
                 <a class="nav-link active text-light" aria-current="page" href="index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light" href="#">Calendario</a>
+                <a class="nav-link text-light" href="pagina3.html">Lista Universidades</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-light" href="pagina2.html">Actualizar datos</a>
@@ -37,9 +37,34 @@
         </div>
       </nav>
       <div class="container">
-      <!--Calendario-->
-      
+      <!--Busqueda de universidades-->
+      <div class="justify-content-center text-center pt-4">
+        <h1 id="tituloPrincipal" class="display-5"><strong>Lista de Universidades por país</strong></h1>
+        <h3 class="subtituloPrincipal">API tomada de: <a href="https://github.com/Hipo/university-domains-list" target="_blank">Universities.hipolabs</a></h3>
+      <form class="row g-3 pt-5 justify-content-center" id="formSearch">
+        <div class="col-auto pt-1">
+          <label>Escribe el pais (inglés)</label>
+        </div>
+        <div class="col-auto">
+          <input type="text" class="form-control" id="country" placeholder="Country" required>
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary mb-3">Buscar</button>
+        </div>
+      </form>
+      <!--Table-->
+      <table class="table" id="tableU">
+        <thead>
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Sitio web</th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
 
+        </tbody>
+      </table>
+      </div>
       <!--Footer pagina-->
       <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
@@ -52,6 +77,8 @@
         </footer>
       </div>
       <script src="js/index.js"></script>
+      <script src="js/logout.js"></script>
+      <script src="js/API.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
